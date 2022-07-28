@@ -9,6 +9,7 @@ const DefaultStyles = css`
     margin: 0;
     color: ${darkColor};
     font-style: normal;
+    text-align: left;
   }
 `
 
