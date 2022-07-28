@@ -113,7 +113,7 @@ const flex: CustomMixin<FlexProps> = ( _ ) => css`
   ${_.flex ? css`flex: ${_.flex};` : ''}
 `
 
-const margins: CustomMixin<MarginProps> = ( _ ) => css`
+export const margins: CustomMixin<MarginProps> = ( _ ) => css`
   ${_.mt ? css`margin-top: ${pxToCssValue( _.mt )};` : ''}
   ${_.mr ? css`margin-right: ${pxToCssValue( _.mr )};` : ''}
   ${_.mb ? css`margin-bottom: ${pxToCssValue( _.mb )};` : ''}
@@ -121,7 +121,7 @@ const margins: CustomMixin<MarginProps> = ( _ ) => css`
   ${_.m ? css`margin: ${pxToCssValue( _.m )};` : ''}
 `
 
-const paddings: CustomMixin<PaddingProps> = ( _ ) => css`
+export const paddings: CustomMixin<PaddingProps> = ( _ ) => css`
   ${_.pt ? css`padding-top: ${pxToCssValue( _.pt )};` : ''}
   ${_.pr ? css`padding-right: ${pxToCssValue( _.pr )};` : ''}
   ${_.pb ? css`padding-bottom: ${pxToCssValue( _.pb )};` : ''}
