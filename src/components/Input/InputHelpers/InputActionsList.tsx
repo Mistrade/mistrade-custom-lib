@@ -39,7 +39,7 @@ export const InputActionsList: React.FC<InputActionsListProps> = ({
 					) : actionsListTitle}
 				</>
 			)}
-			<FlexBlock width={'100%'} justify={'flex-start'} gap={6}>
+			<FlexBlock width={'100%'} justify={'flex-start'} gap={6} wrap={'wrap'} direction={'row'}>
 				{actions.map(action => (
 					<InputAction
 						item={action}

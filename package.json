@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "webpack && git add . && git commit -m 'upgrade version' && git push  && npm publish"
+    "pub": "webpack && git add . && git commit -m 'upgrade version' && git push && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "mistrade",

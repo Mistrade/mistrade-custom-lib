@@ -207,7 +207,7 @@
     display: flex;
     margin-bottom: 4px;
   }
-`,j=({actions:e,actionHandler:t,onDeleteAction:o,actionsListTitle:r})=>e.length?g().createElement(d,{mt:6,pl:8,pr:8,width:"100%",justify:"flex-start",direction:"column"},r&&g().createElement(g().Fragment,null,"string"==typeof r?g().createElement(z,null,r):r),g().createElement(d,{width:"100%",justify:"flex-start",gap:6},e.map((e=>g().createElement(C,{item:e,onSelect:e=>t&&t(e),onDelete:o}))))):g().createElement(g().Fragment,null),H=({isDirty:t,errorMessage:o})=>t&&o?g().createElement(d,{mt:6,pl:8,pr:8,width:"100%",position:"relative",additionalCss:e.css`
+`,j=({actions:e,actionHandler:t,onDeleteAction:o,actionsListTitle:r})=>e.length?g().createElement(d,{mt:6,pl:8,pr:8,width:"100%",justify:"flex-start",direction:"column"},r&&g().createElement(g().Fragment,null,"string"==typeof r?g().createElement(z,null,r):r),g().createElement(d,{width:"100%",justify:"flex-start",gap:6,wrap:"wrap",direction:"row"},e.map((e=>g().createElement(C,{item:e,onSelect:e=>t&&t(e),onDelete:o}))))):g().createElement(g().Fragment,null),H=({isDirty:t,errorMessage:o})=>t&&o?g().createElement(d,{mt:6,pl:8,pr:8,width:"100%",position:"relative",additionalCss:e.css`
         color: #ff5e5e;
         font-size: 12px;
         font-weight: bold
