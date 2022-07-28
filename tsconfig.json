@@ -111,5 +111,5 @@
   "include": [
     "src/**/*"
   ],
-  "exclude": ['dist']
+  "exclude": ["dist"]
 }
