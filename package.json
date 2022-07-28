@@ -1,10 +1,10 @@
 {
   "name": "mistrade-custom-lib",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "npm version patch && webpack && npm publish"
+    "pub": "webpack && git add . && git commit -m 'upgrade version' && git push  && npm publish"
   },
   "keywords": [],
   "author": "mistrade",
