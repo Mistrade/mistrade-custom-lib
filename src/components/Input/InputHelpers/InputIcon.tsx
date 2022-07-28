@@ -1,6 +1,6 @@
+import { LoaderIcon } from "mistrade-icon-lib";
 import React from "react";
 import {css} from "styled-components";
-import {LoaderIcon} from "../../Icons/LoaderIcon";
 import {FlexBlock} from "../../Layout/FlexBlock";
 import {TextInputProps} from "../types";
 

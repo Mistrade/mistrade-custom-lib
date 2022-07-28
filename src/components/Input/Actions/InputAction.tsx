@@ -2,9 +2,8 @@ import styled from 'styled-components'
 import {currentColor, defaultColor, disabledColor, hoverColor} from '../../../common/style-config'
 import {FC, ReactNode, useCallback} from 'react'
 import React from 'react'
-import {LoaderIcon} from '../../Icons/LoaderIcon'
 import {TextInputAdditionalAction} from "../types";
-import {ClearIcon} from "../../Icons/ClearIcon";
+import {ClearIcon} from 'mistrade-icon-lib'
 
 export interface InputActionProps {
 	item: TextInputAdditionalAction,

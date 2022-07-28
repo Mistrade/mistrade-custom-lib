@@ -66,7 +66,6 @@
   & {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: bold;
-    margin: 0;
     color: ${a};
     font-style: normal;
     text-align: left;
@@ -74,6 +73,7 @@
 `,m={H1:t()("h1")`
     & {
       ${d};
+			margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"28px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};
@@ -83,6 +83,7 @@
 	`,H2:t()("h2")`
     & {
       ${d};
+      margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"24px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};
@@ -92,6 +93,7 @@
 	`,H3:t()("h3")`
     & {
       ${d};
+      margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"22px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};
@@ -100,6 +102,7 @@
 	`,H4:t()("h4")`
     & {
       ${d};
+      margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"20px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};
@@ -108,6 +111,7 @@
 	`,H5:t()("h5")`
     & {
       ${d};
+      margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"18px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};
@@ -116,6 +120,7 @@
 	`,H6:t()("h6")`
     & {
       ${d};
+      margin: 0;
       font-size: ${e=>e.fs?l(e.fs):"16px"};
       color: ${e=>e.color||a};
       ${e=>c(e)};

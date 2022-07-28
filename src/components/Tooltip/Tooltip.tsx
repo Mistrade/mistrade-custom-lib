@@ -1,9 +1,9 @@
 import { FC, ReactNode, useEffect, useMemo, useRef, useState } from 'react'
 import React from 'react'
-import {IconProps} from "../Icons/types";
 import {TooltipContent, TooltipWrapper} from "./styled.tooltip";
 import {FlexBlock} from "../Layout/FlexBlock";
-import {TooltipIcon} from "../Icons/TootlipIcon";
+import { TooltipIcon } from 'mistrade-icon-lib';
+import { IconProps } from 'mistrade-icon-lib/dist/types';
 
 export interface TooltipProps {
 	children?: ReactNode,
