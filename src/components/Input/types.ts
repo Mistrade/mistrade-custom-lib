@@ -22,7 +22,8 @@ export interface DefaultTextInputProps {
 	isLoading?: boolean,
 	tooltipText?: string,
 	tooltipIcon?: ReactNode,
-	tooltipPlacement?: TooltipProps['placement']
+	tooltipPlacement?: TooltipProps['placement'],
+	tooltipIconColor?: string
 }
 
 export interface TextInputAdditionalAction {

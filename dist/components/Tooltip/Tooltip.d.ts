@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { IconProps } from "../Icons/types";
+import { IconProps } from 'mistrade-icon-lib/dist/types';
 export interface TooltipProps {
     children?: ReactNode;
     text: string;

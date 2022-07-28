@@ -13,7 +13,7 @@ export const TooltipWrapper = styled('span')<{ size: number }>`
 `
 
 
-export const TooltipContent = styled('span')<{ isVisible: boolean, left: number | string, top: number | string, opacity: number, placement: OptionsTooltip['placement'] }>`
+export const TooltipContent = styled('span')<{ isVisible: boolean, left: number | string, top: number | string, opacity: number, placement: OptionsTooltip['placement'], bodyColor?: string }>`
   & {
     display: flex;
     visibility: ${_ => _.isVisible ? 'visible' : 'hidden'};
@@ -27,7 +27,7 @@ export const TooltipContent = styled('span')<{ isVisible: boolean, left: number 
     max-width: 400px;
     flex-shrink: 1;
     border-radius: 4px;
-    background-color: ${currentColorWithoutBlur};
+    background-color: ${_ => _.bodyColor || currentColorWithoutBlur};
     color: #fff;
     text-align: center;
     padding: 10px 12px;
@@ -46,7 +46,7 @@ export const TooltipContent = styled('span')<{ isVisible: boolean, left: number 
     width: 14px;
     height: 14px;
     transform: rotate(45deg) translateX(-50%);
-    background-color: ${currentColorWithoutBlur};
+    background-color: ${_ => _.bodyColor || currentColorWithoutBlur};
     z-index: -10;
     ${_ => {
       switch (_.placement) {

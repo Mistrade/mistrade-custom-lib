@@ -7,6 +7,7 @@ import {InputAbsolutePositionContent} from "./InputHelpers/InputAbsolutePosition
 import {InputIcon} from "./InputHelpers/InputIcon";
 import {TextInputProps} from "./types";
 import {Tooltip} from "../Tooltip/Tooltip";
+import {currentColor} from "../../common/style-config";
 
 export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
 																																				 value,
@@ -31,7 +32,8 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
 																																				 tooltipText,
 																																				 onClick,
 																																				 onClear,
-																																				 tooltipPlacement
+																																				 tooltipPlacement,
+																																				 tooltipIconColor = currentColor
 																																			 }, ref) => {
 	
 	//Добавить иконку с действием - очистить
@@ -57,6 +59,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
 					{tooltipText && (
 						<Tooltip
 							text={tooltipText}
+							color={tooltipIconColor}
 							placement={tooltipPlacement || 'top'}
 							children={tooltipIcon || undefined}
 						/>
