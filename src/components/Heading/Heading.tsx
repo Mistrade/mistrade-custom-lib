@@ -6,7 +6,6 @@ const DefaultStyles = css`
   & {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: bold;
-    margin: 0;
     color: ${darkColor};
     font-style: normal;
     text-align: left;
@@ -22,6 +21,7 @@ export const Heading = {
 	H1: styled('h1')<HeadingProps>`
     & {
       ${DefaultStyles};
+			margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '28px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
@@ -32,6 +32,7 @@ export const Heading = {
 	H2: styled('h2')<HeadingProps>`
     & {
       ${DefaultStyles};
+      margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '24px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
@@ -42,6 +43,7 @@ export const Heading = {
 	H3: styled('h3')<HeadingProps>`
     & {
       ${DefaultStyles};
+      margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '22px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
@@ -51,6 +53,7 @@ export const Heading = {
 	H4: styled('h4')<HeadingProps>`
     & {
       ${DefaultStyles};
+      margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '20px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
@@ -60,6 +63,7 @@ export const Heading = {
 	H5: styled('h5')<HeadingProps>`
     & {
       ${DefaultStyles};
+      margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '18px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
@@ -69,6 +73,7 @@ export const Heading = {
 	H6: styled('h6')<HeadingProps>`
     & {
       ${DefaultStyles};
+      margin: 0;
       font-size: ${_ => _.fs ? pxToCssValue(_.fs) : '16px'};
       color: ${_ => _.color || darkColor};
       ${_ => margins(_)};
