@@ -14,7 +14,7 @@ export const ActionsListTitle = styled.span`
     font-style: normal;
     font-size: 12px;
     font-family: "Helvetica Neue", sans-serif;
-		line-height: 1.1;
+    line-height: 1.1;
     display: flex;
     margin-bottom: 4px;
   }
@@ -31,7 +31,7 @@ export const InputActionsList: React.FC<InputActionsListProps> = ({
 	}
 	
 	return (
-		<FlexBlock mt={6} gap={6} pl={8} pr={8} width={'100%'} justify={'flex-start'} wrap={'wrap'}>
+		<FlexBlock mt={6} pl={8} pr={8} width={'100%'} justify={'flex-start'} direction={'column'}>
 			{actionsListTitle && (
 				<>
 					{typeof actionsListTitle === 'string' ? (
@@ -39,13 +39,15 @@ export const InputActionsList: React.FC<InputActionsListProps> = ({
 					) : actionsListTitle}
 				</>
 			)}
-			{actions.map(action => (
-				<InputAction
-					item={action}
-					onSelect={(action) => actionHandler && actionHandler(action)}
-					onDelete={onDeleteAction}
-				/>
-			))}
+			<FlexBlock width={'100%'} justify={'flex-start'} gap={6}>
+				{actions.map(action => (
+					<InputAction
+						item={action}
+						onSelect={(action) => actionHandler && actionHandler(action)}
+						onDelete={onDeleteAction}
+					/>
+				))}
+			</FlexBlock>
 		</FlexBlock>
 	)
 }
