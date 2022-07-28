@@ -4,6 +4,7 @@ export interface TooltipProps {
     children?: ReactNode;
     text: string;
     placement?: 'top' | 'bottom' | 'right';
+    bodyColor?: string;
 }
 export interface OptionsTooltip {
     state: boolean;

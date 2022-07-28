@@ -8,4 +8,5 @@ export declare const TooltipContent: import("styled-components").StyledComponent
     top: number | string;
     opacity: number;
     placement: OptionsTooltip['placement'];
+    bodyColor?: string | undefined;
 }, never>;
