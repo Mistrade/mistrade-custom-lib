@@ -1,0 +1,7 @@
+export const disabledColor = 'rgba(30,30,30,.1)'
+export const defaultColor = 'rgba(30,30,30,.45)'
+export const currentColor = 'rgba(100,149,237,.9)'
+export const currentColorWithoutBlur = 'rgb(100,149,237)'
+export const hoverColor = 'rgba(100,149,237,.15)'
+export const darkColor = 'rgba(0, 0, 0, .6)'
+export const todayID = 'calendar-today'
