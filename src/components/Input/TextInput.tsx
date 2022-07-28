@@ -33,7 +33,8 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
 																																				 onClick,
 																																				 onClear,
 																																				 tooltipPlacement,
-																																				 tooltipIconColor = currentColor
+																																				 tooltipIconColor = currentColor,
+																																				 actionsListTitle
 																																			 }, ref) => {
 	
 	//Добавить иконку с действием - очистить
@@ -94,7 +95,12 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
 					/>
 				</FlexBlock>
 				<InputErrorMessage isDirty={isDirty} errorMessage={errorMessage || ''}/>
-				<InputActionsList actions={actions || []} actionHandler={actionHandler} onDeleteAction={onDeleteAction}/>
+				<InputActionsList
+					actions={actions || []}
+					actionHandler={actionHandler}
+					onDeleteAction={onDeleteAction}
+					actionsListTitle={actionsListTitle}
+				/>
 			</FlexBlock>
 		</FlexBlock>
 	

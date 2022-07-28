@@ -23,7 +23,8 @@ export interface DefaultTextInputProps {
 	tooltipText?: string,
 	tooltipIcon?: ReactNode,
 	tooltipPlacement?: TooltipProps['placement'],
-	tooltipIconColor?: string
+	tooltipIconColor?: string,
+	actionsListTitle?: ReactNode
 }
 
 export interface TextInputAdditionalAction {
@@ -34,5 +35,5 @@ export interface TextInputAdditionalAction {
 export interface TextInputProps extends DefaultTextInputProps {
 	containerProps?: FlexBlockProps,
 	onClick?: (e: React.MouseEvent<HTMLInputElement>) => void,
-	onClear?: (e: React.MouseEvent<HTMLElement>) => void
+	onClear?: (e: React.MouseEvent<HTMLElement>) => void,
 }
