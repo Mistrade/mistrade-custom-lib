@@ -23,6 +23,7 @@ export interface DefaultTextInputProps {
     tooltipIcon?: ReactNode;
     tooltipPlacement?: TooltipProps['placement'];
     tooltipIconColor?: string;
+    actionsListTitle?: ReactNode;
 }
 export interface TextInputAdditionalAction {
     title: string;
